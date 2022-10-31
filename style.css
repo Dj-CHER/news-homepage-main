@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;600&family=Inter:wght@900&family=Outfit:wght@100;200&display=swap');
+*
+{padding: 0;
+margin: 0;}
+
+body
+{
+    font-family: 'Barlow Semi Condensed';
+    background-color: hsl(36, 100%, 99%);
+}
+
+header
+{
+    margin-top: 3vw;
+}
+
+header nav
+{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+header nav .logo
+{
+    width: 5vw;
+}
+
+header ul
+{
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li
+{
+    list-style: none;
+    margin-left: 4vw;
+    font-weight: 600;
+    font-size: 1vw;
+    color:hsl(236, 13%, 42%);
+}
+
+header nav ul li:hover
+{
+    cursor: pointer;
+    color:hsl(35, 77%, 62%);
+}
+
+main
+{
+    display: grid;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vw;
+    grid-template-columns: 26vw 30%;
+    grid-template-rows: 20vw 30%;
+    gap: 2vw;
+}
+
+
+main .main-desktop
+{
+    width: 100%;
+    height: 100%;
+}
+
+main .main-item1
+{
+    grid-column: 1/3;
+}
+
+main .main-item2
+{
+    background-color: hsl(240, 100%, 5%);
+    grid-column:3/4;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    color: white;
+}
+
+
+main .main-item2 h1
+{
+    color: hsl(35, 77%, 62%);
+    letter-spacing: 1px;
+    font-size: 3vw;
+}
+
+main .main-item2 h2
+{
+    font-size: 1.8vw;
+}
+
+main .main-item2 div p
+{
+    width: 16vw;
+    margin-top: 1vw;
+    font-size: 1vw;
+}
+hr
+{
+    border: 0.1px solid rgba(255, 255, 255, 0.166);
+}
+
+.main-item3 p
+{
+    width: 15vw;
+    font-size: 3vw;
+    font-weight: 900;
+    font-family: 'Barlow Semi Condensed';
+    color: hsl(240, 100%, 5%);;
+}
+
+.main-item4
+{
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-item4 p
+{
+    font-size: 1vw;
+    width: 18vw;
+}
+
+.main-item4 button
+{
+    width: 10vw;
+    height: 2.8vw;
+    color: white;
+    border: none;
+    background-color: hsl(5, 85%, 63%);
+    font-size: 1vw;
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+
+.main-item4 button:hover
+{
+   cursor: pointer;
+   background-color: hsl(240, 100%, 5%);
+}
+
+footer
+{
+    display: flex;
+    margin-top: 5vw;
+    justify-content: space-around;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-bottom: 4vw;
+}
+
+.footer-item
+{
+    display: flex;
+}
+
+.footer-item img
+{
+    width: 7vw;
+}
+
+.footer-item div
+{
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-item div h1
+{
+    font-size: 3vw;
+    color: hsl(233, 8%, 79%);
+}
+
+.footer-item div h2
+{
+    color: hsl(240, 100%, 5%);
+    font-size: 1.5vw;
+}
+
+.footer-item div h2:hover
+{
+    cursor: pointer;
+    color: hsl(5, 85%, 63%);
+}
+
+.footer-item div p
+{
+    font-size: 1vw;
+    width: 11.8vw;
+}
+
+#menu-mobile
+{
+    display: none;
+}
+
+.close
+{
+    display: none;
+}
+
+@media (max-width:675px)
+{
+    header nav
+    {
+        margin-top: 5vw;
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+
+
+    main
+    {
+        display: grid;
+        margin: 15vw;
+        margin-top: 7vw;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        gap: 1vw;
+    }
+
+    main .main-item1
+    {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    main .main-item2
+    {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        height: 55vh;
+    }
+
+    main .main-item2 h1
+    {
+        font-size: 6vw;
+    }
+    
+    main .main-item2 h2
+    {
+        font-size: 3.5vw;
+    }
+
+    main .main-item2 div p
+    {
+        font-size: 2.5vw;
+        width: 38vw;
+    }
+    
+    main .main-item3 p
+    {
+        margin-top: 3vw;
+        font-size: 10vw;
+        width: 60vw;
+    }
+
+    main .main-item4 p 
+    {
+        font-size: 4vw;
+        width: 70vw;
+        margin-top: 3vw;
+        margin-bottom: 5vw;
+    }
+
+    main .main-item4 button
+    {
+        width: 35vw;
+        height: 7vw;
+        font-size: 3vw;
+        letter-spacing: 0.6vw;
+        margin-bottom: 10vw;
+    }
+
+    footer
+    {
+        flex-direction: column;
+        margin-top: 5vw;
+        justify-content: space-around;
+        padding-bottom: 0;
+        align-items: center;
+        height: 90vh;
+    }
+
+
+    .footer-item img
+    {
+        width: 20vw;
+    }
+
+
+    .footer-item div h1
+    {
+        font-size: 7vw;
+    }
+
+    .footer-item div h2
+    {
+        font-size: 3vw;
+    }
+
+    .footer-item div h2:hover
+    {
+        cursor: pointer;
+        color: hsl(5, 85%, 63%);
+    }
+
+    .footer-item div p
+    {
+        color: hsl(236, 13%, 42%);
+        font-size: 3vw;
+        width: 32vw;
+    }
+
+    #menu-mobile
+    {
+        display: inline;
+        width: 9vw;
+    }
+
+    #menu-mobile:hover
+    {
+        cursor: pointer;
+    }
+
+    #HNPTC
+    {
+        display: none;
+    }
+
+    #close-mobile
+    {
+        display: inline;
+        position: fixed;
+        transform: translateY(-9vw);
+        background-color: rgba(0, 0, 0, 0.547);
+        width: 0%;
+        height: 100%;
+        z-index: 1;  
+     }
+
+     #close-mobile div
+     {
+        height: 100%;
+        float: right;
+        background-color: hsl(30, 27%, 96%);;
+        display: flex;
+        flex-direction: column;
+        width: 0vw;
+        transition: width 0.2s;
+     }
+
+     #menu-close
+     {
+        width: 7vw;
+        align-self: flex-end;
+        margin-top: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 15vw;
+     }
+
+     #menu-close:hover
+     {
+        cursor: pointer;
+     }
+     
+     #HNPTC-2
+     {
+        display: none;
+     }
+
+     #HNPTC-2 li
+     {
+        list-style: none;
+        margin-bottom: 5vw;
+        font-size: 3.5vw;
+        margin-left: 10vw;
+        width: fit-content;
+        padding: 1vw;
+        border: 2px dotted hsla(35, 77%, 62%, 0);
+     }
+
+     #HNPTC-2 li:hover
+     {
+        border: 2px dotted hsl(35, 77%, 62%);
+        cursor: pointer;
+     }
+
+}

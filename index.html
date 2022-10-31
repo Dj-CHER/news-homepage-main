@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->  
+  <link rel="stylesheet" href="./style.css">
+  <title>News homepage</title>
+  <script src="code.js"></script>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <img class="logo" src="./images/logo.svg" alt="Logo">
+      <ul id="HNPTC">
+        <li> Home </li>
+        <li> New </li>
+        <li> Popular </li>
+        <li> Trending </li>
+        <li> Categories </li>
+      </ul>
+      <img id="menu-mobile" onclick="my_open()" src="./images/icon-menu.svg" alt="menu-mobile">
+    </nav>
+  </header>
+
+  <div class="close" id="close-mobile">
+    <div id="close-item">
+      <img id="menu-close" onclick="my_close()" src="./images/icon-menu-close.svg" alt="menu-close">
+      <ul id="HNPTC-2">
+        <li> Home </li>
+        <li> New </li>
+        <li> Popular </li>
+        <li> Trending </li>
+        <li> Categories </li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <div class="main-item1">
+      <img class="main-desktop" id="main-image" src="./images/image-web-3-desktop.jpg" alt="Laptop">
+    </div>
+
+    <div class="main-item2">
+      <h1>New </h1>
+      <div>
+        <h2>Hydrogen VS Electric Cars</h2>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </div>
+      <hr>
+      <div>
+        <h2>The Downsides of AI Artistry</h2>
+        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+      </div>
+      <hr>
+      <div>
+        <h2>Is VC Funding Drying Up?</h2>
+        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div>
+    </div>
+
+    <div class="main-item3">
+      <p>The Bright Future of Web 3.0?</p>
+    </div>
+    
+    <div class="main-item4">
+      <p>
+        We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+        But is it really fulfilling its promise?
+      </p>
+      <button>READ MORE</button>
+    </div>
+    
+  </main>
+
+  <footer>
+    <div class="footer-item">
+      <img src="./images/image-retro-pcs.jpg" alt="retro-gaming">
+      <div>
+        <h1>01</h1>
+        <h2>Reviving Retro PCs</h2>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
+    
+    <div class="footer-item">
+      <img src="./images/image-top-laptops.jpg" alt="yop-laptops">
+      <div>
+        <h1>02</h1>
+        <h2>Top 10 Laptops of 2022</h2>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
+    
+    <div class="footer-item">
+      <img src="./images/image-gaming-growth.jpg" alt="gaming-growth">
+      <div>
+        <h1>03</h1>
+        <h2>The Growth of Gaming</h2>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>    
+  </footer>
+  
+</body>
+</html>
